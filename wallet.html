@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bitcoins.com</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.head {
+	  background-color: rgb(2, 35, 124);
+	  position: absolute;
+	  left: -2px;
+	  top: 0px;
+	  width: 1920px;
+	  height: 680px;
+	  z-index: 159;
+	}
+
+	.menu {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1px;
+  height: 1px;
+  z-index: 286;
+}
+	.menuv2 {
+  font-size: 13px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.364;
+  text-align: left;
+  -moz-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  -webkit-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  -ms-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  position: absolute;
+  left: 295.75px;
+  top: 46.634px;
+  z-index: 285;
+}
+.menuv2:hover{
+	background: aqua;
+	color: black;
+}
+.menuv3 {
+  font-size: 13px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.364;
+  text-align: left;
+  -moz-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  -webkit-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  -ms-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  position: absolute;
+  left: 380.75px;
+  top: 46.634px;
+  z-index: 285;
+}
+.menuv3:hover{
+	background: aqua;
+	color: black;
+}
+.menuv4{
+  font-size: 13px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.364;
+  text-align: left;
+  -moz-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  -webkit-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  -ms-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  position: absolute;
+  left: 490.75px;
+  top: 46.634px;
+  z-index: 285;
+}
+.menuv4:hover{
+	background: aqua;
+	color: black;
+}
+.Crypticoin {
+  font-size: 31px;
+  font-family: "Fixedsys";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 0.575;
+  -moz-transform: matrix( 0.68693819526521,0,0,0.68085106382979,0,0);
+  -webkit-transform: matrix( 0.68693819526521,0,0,0.68085106382979,0,0);
+  -ms-transform: matrix( 0.68693819526521,0,0,0.68085106382979,0,0);
+  position: absolute;
+  left: 880.945px;
+  top: 46.634px;
+  z-index: 288;
+}
+.top-logo {
+    position: absolute;
+    top: 40px;
+    left: 855px;
+    z-index: 285;
+}
+.sign {
+  font-size: 13px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.364;
+  text-align: left;
+  position: absolute;
+  left: 1483.12px;
+  top: 46.634px;
+  z-index: 300;
+  overflow: hidden; 
+}
+.sign:hover{
+	background: aqua;
+	color: black;
+}
+.up{
+	font-size: 13px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.364;
+  text-align: left;
+  position: absolute;
+  left: 1522.12px;
+  top: 46.634px;
+  z-index: 300;
+  overflow: hidden; 
+}
+.up:hover{
+	background: aqua;
+	color: black;
+}
+.strelka:after{
+    content: '';
+    border: 8px solid transparent;
+    border-top: 8px solid rgb(211, 177, 227);
+    position: absolute;
+    margin-left: -12px;
+    width: 0;
+    top: 50.634px;
+    left: 1373px;
+    z-index: 96;
+}
+.strelkav2 {
+   content: '';
+    border: 8px solid transparent;
+    border-top: 8px solid rgb(211, 177, 227);
+    position: absolute;
+    margin-left: -12px;
+    width: 0;
+    top: 50px;
+    left: 1474px;
+    z-index: 96;	
+}
+
+.flag {
+  background-image: url("imagesWallet/icon.png");
+  position: absolute;
+  left: 1392px;
+  top: 46.634px;
+  width: 14px;
+  height: 11px;
+  z-index: 294;
+}
+.btcv2 {
+   font-size: 12px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  right: 49px;
+  top: 0.9px;
+  z-index: 293;
+  overflow: hidden; 	
+  }
+.english {
+  font-size: 12px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 17px;
+  top: 0.9px;
+  z-index: 293;
+  overflow: hidden;
+}
+.Social {
+  font-size: 26px;
+  font-family: "Roboto";
+  color: rgb(254, 254, 255);
+  line-height: 1.385;
+  text-align: center;
+  position: absolute;
+  left: 589.938px;
+  top: 382.171px;
+  z-index: 221;
+}
+.buy {
+  font-size: 72px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  line-height: 1.2;
+  text-align: center;
+  text-shadow: 0px 11px 81px rgba(27, 41, 58, 0.48);
+  position: absolute;
+  left: 635.937px;
+  top: 245.474px;
+  z-index: 220;
+}
+.znak {
+  font-size: 16px;
+  font-family: "Ionicons";
+  color: rgb(91, 106, 132);
+  line-height: 1.625;
+  text-align: left;
+  -moz-transform: matrix( 1.00027117884933,0,0,1.00037124001034,0,0);
+  -webkit-transform: matrix( 1.00027117884933,0,0,1.00037124001034,0,0);
+  -ms-transform: matrix( 1.00027117884933,0,0,1.00037124001034,0,0);
+  position: absolute;
+  left: 1090.55px;
+  top: 847px;
+  z-index: 212;
+}
+.Over {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.625;
+  text-align: left;
+  -moz-transform: matrix( 1.00027117884933,0,0,1.00037124001034,0,0);
+  -webkit-transform: matrix( 1.00027117884933,0,0,1.00037124001034,0,0);
+  -ms-transform: matrix( 1.00027117884933,0,0,1.00037124001034,0,0);
+  position: absolute;
+  left: 861.5px;
+  top: 885.627px;
+  z-index: 211;
+}
+.Creative {
+  font-size: 42px;
+  font-family: "Rubik";
+  color: rgb(50, 61, 80);
+  line-height: 1.185;
+  text-align: center;
+  -moz-transform: matrix( 1.28527693827945,0,0,1.28546035201328,0,0);
+  -webkit-transform: matrix( 1.28527693827945,0,0,1.28546035201328,0,0);
+  -ms-transform: matrix( 1.28527693827945,0,0,1.28546035201328,0,0);
+  position: absolute;
+  left: 786.5px;
+  top: 825.705px;
+  z-index: 210;
+}
+.protected {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.714;
+  text-align: center;
+  position: absolute;
+  left: 1179.78px;
+  top: 1163.25px;
+  width: 330px;
+  height: 86px;
+  z-index: 176;
+}
+.Security {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 79);
+  line-height: 1.083;
+  text-align: center;
+  position: absolute;
+  left: 1318.274px;
+  top: 1108.976px;
+  z-index: 171;
+}
+.Securityimg {
+  background-image: -moz-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  position: absolute;
+  left: 1314px;
+  top: 975px;
+  width: 95px;
+  height: 95px;
+  z-index: 174;
+  transition: all 1.5s linear 0s;
+}
+.Securityimg:hover{
+	transform: scale(1.4);
+}
+.buying {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.714;
+  text-align: center;
+  position: absolute;
+  left: 780.956px;
+  top: 1163.25px;
+  width: 339px;
+  height: 86px;
+  z-index: 167;
+}
+.Advanced {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: rgb(82, 82, 197);
+  line-height: 1;
+  text-align: center;
+  position: absolute;
+  left: 807.844px;
+  top: 1107.996px;
+  z-index: 162;
+}
+.bitcoinvroste {
+  background-image: -moz-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  position: absolute;
+  left: 915px;
+  top: 975px;
+  width: 95px;
+  height: 95px;
+  z-index: 165;
+  transition: all 1.5s linear 0s;
+}
+.bitcoinvroste:hover{
+	transform: scale(1.4);
+}	
+.directly {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.714;
+  text-align: center;
+  position: absolute;
+  left: 372.453px;
+  top: 1163.25px;
+  width: 344px;
+  height: 62px;
+  z-index: 158;
+}
+.Same {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 79);
+  line-height: 1.083;
+  text-align: center;
+  position: absolute;
+  left: 387.274px;
+  top: 1108.988px;
+  z-index: 153;
+}
+.inet {
+  background-image: -moz-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  position: absolute;
+  left: 509px;
+  top: 975px;
+  width: 95px;
+  height: 96px;
+  z-index: 156;
+  transition: all 1.5s linear 0s;
+}
+.inet:hover{
+	transform: scale(1.4);
+}
+
+.Creating {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.714;
+  text-align: center;
+  position: absolute;
+  left: 1176.222px;
+  top: 1542.25px;
+  width: 343px;
+  height: 86px;
+  z-index: 205;
+}
+.Customizable {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 79);
+  line-height: 1.083;
+  text-align: center;
+  position: absolute;
+  left: 1236.938px;
+  top:  1489.854px;
+  z-index: 200;
+}
+.mobilka {
+  position: absolute;
+  left: 1327px;
+  top: 1350px;
+  width: 95px;
+  height: 95px;
+  z-index: 203;
+  transition: all 1.5s linear 0s;
+}
+.mobilka:hover{
+	transform: scale(1.4);
+}
+
+.have {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.714;
+  text-align: center;
+  position: absolute;
+  left: 773px;
+  top: 1542px;
+  width: 350px;
+  height: 86px;
+  z-index: 196;
+}
+.Leverage {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 79);
+  line-height: 1.083;
+  text-align: center;
+  position: absolute;
+  left: 909px;
+  top: 1489px;
+  z-index: 191;
+}
+.bitcoinzamok {
+  position: absolute;
+  left: 928px;
+  top: 1350px;
+  width: 66px;
+  height: 95px;
+  z-index: 194;
+  transition: all 1.5s linear 0s;
+}
+.bitcoinzamok:hover{
+	transform: scale(1.4);
+}
+.Want {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.714;
+  text-align: center;
+  position: absolute;
+  left: 370.532px;
+  top: 1541.578px;
+  width: 353px;
+  height: 63px;
+  z-index: 187;
+}
+.Digital {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 79);
+  line-height: 1.083;
+  text-align: center;
+  position: absolute;
+  left: 435.938px;
+  top: 1487.988px;
+  z-index: 182;
+}
+.bitcoinvkruge {
+  background-image: -moz-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  position: absolute;
+  left: 514px;
+  top: 1350px;
+  width: 95px;
+  height: 95px;
+  z-index: 185;
+  transition: all 1.5s linear 0s;
+}
+.bitcoinvkruge:hover{
+	transform: scale(1.4);
+}
+}
+.walletv2 {
+  font-size: 42px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  line-height: 1.186;
+  text-align: center;
+  position: absolute;
+  left: 724.844px;
+  top: 1944.684px;
+  z-index: 145;
+}
+.bgcounter {
+  background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgb(179,0,230) 0%, rgb(56,18,127) 100%);
+  background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(179,0,230) 0%, rgb(56,18,127) 100%);
+  background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(179,0,230) 0%, rgb(56,18,127) 100%);
+  position: absolute;
+  left: -2px;
+  top: 1755px;
+  width: 1922px;
+  height: 651px;
+  z-index: 120;
+}
+.Leading {
+  font-size: 26px;
+  font-family: "Roboto";
+  color: rgb(254, 254, 255);
+  line-height: 1.385;
+  text-align: center;
+  position: absolute;
+  left: 685.493px;
+  top: 2003.176px;
+  width: 531px;
+  height: 62px;
+  z-index: 144;
+}
+.line {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 1139px;
+  top: 2163px;
+  width: 1px;
+  height: 125px;
+  z-index: 140;
+}
+.linev2 {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 776px;
+  top: 2163px;
+  width: 1px;
+  height: 125px;
+  z-index: 139;
+}
+.pidesat {
+  font-size: 42px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  line-height: 1.186;
+  text-align: left;
+  position: absolute;
+  left: 1243.102px;
+  top: 2175.767px;
+  z-index: 136;
+}
+.TRUSTED {
+  font-size: 26px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.385;
+  text-align: left;
+  position: absolute;
+  left: 1184.242px;
+  top: 2228.495px;
+  z-index: 135;
+}
+.simdesat {
+  font-size: 42px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  line-height: 1.186;
+  text-align: left;
+  position: absolute;
+  left: 875.938px;
+  top: 2179.767px;
+  z-index: 132;
+}
+.HAPPY {
+  font-size: 26px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.385;
+  text-align: left;
+  position: absolute;
+  left: 837.937px;
+  top: 2228.495px;
+  z-index: 131;
+}
+.ziro {
+  font-size: 42px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  line-height: 1.186;
+  text-align: left;
+  position: absolute;
+  left: 520.102px;
+  top: 2179.767px;
+  z-index: 128;
+}
+.BOUGHT {
+  font-size: 26px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.385;
+  text-align: left;
+  position: absolute;
+  left: 493.937px;
+  top: 2228.495px;
+  z-index: 127;
+}
+.krugg{
+	 position:absolute;
+ text-transform: uppercase;
+ top: 1870px;
+ left: 1200px;
+ padding: 25;
+ z-index: 200;
+ opacity: 0.20;
+}
+.graph {
+  position: absolute;
+  left: 0px;;
+  top: 2048px;
+  width: 396px;
+  height: 854px;
+  z-index: 122;
+}
+.and {
+  font-size: 42px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  line-height: 1.186;
+  text-align: left;
+  position: absolute;
+  left: 774.418px;
+  top: 2657.594px;
+  z-index: 96;
+}
+.bg-null {
+  background-image: -moz-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  position: absolute;
+  left: 375px;
+  top: 2556px;
+  width: 1169px;
+  height: 440px;
+  z-index: 84;
+}
+.hover {
+  background-color: rgb(82, 82, 197);
+  position: absolute;
+  left: 375px;
+  top: 2556px;
+  width: 1170px;
+  height: 6px;
+  z-index: 85;
+}
+.large {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 773.937px;
+  top: 2764.25px;
+  width: 689px;
+  height: 86px;
+  z-index: 95;
+}
+.iconn {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 435px;
+  top: 2655px;
+  width: 250px;
+  height: 243px;
+  z-index: 88;
+  
+}
+
+@-webkit-keyframes rotating {
+	to { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes rotating {
+	to { -moz-transform: rotate(360deg); }
+}
+@-ms-keyframes rotating {
+	to { -ms-transform: rotate(360deg); }
+}
+@-o-keyframes rotating {
+	to { -o-transform: rotate(360deg); }
+}
+@keyframes rotating {
+	to { transform: rotate(360deg); }
+}
+
+.truly {
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.25;
+  text-align: left;
+  position: absolute;
+  left: 772.961px;
+  top: 2880.698px;
+  z-index: 92;
+}
+.linev3 {
+  background-color: rgb(235, 235, 235);
+  position: absolute;
+  left: 774px;
+  top: 2912px;
+  width: 252px;
+  height: 1px;
+  z-index: 90;
+}
+.Fees {
+  font-size: 42px;
+  font-family: "Rubik";
+  color: rgb(25, 37, 53);
+  line-height: 1.186;
+  text-align: left;
+  position: absolute;
+  left: 473.848px;
+  top: 3147.594px;
+  z-index: 113;
+}
+.organization {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 473.937px;
+  top: 3254.25px;
+  width: 689px;
+  height: 86px;
+  z-index: 112;
+}
+.stories {
+  font-size: 20px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.25;
+  text-align: left;
+  position: absolute;
+  left: 472.87px;
+  top: 3388.5px;
+  z-index: 109;
+  cursor: progress;
+ 
+}
+.linev4 {
+  background-color: rgb(235, 235, 235);
+  position: absolute;
+  left: 472px;
+  top: 3415px;
+  width: 145px;
+  height: 5px;
+  z-index: 107;
+}
+.whitekrug {
+  background-color: rgb(50, 61, 80);
+  position: absolute;
+  left: 1221px;
+  top: 3141px;
+  width: 250px;
+  height: 250px;
+  z-index: 105;
+  -webkit-animation: rotating 30s infinite linear;
+-moz-animation: rotating 30s infinite linear;
+-ms-animation: rotating 30s infinite linear;
+-o-animation: rotating 30s infinite linear;
+animation: rotating 30s infinite linear;
+}
+
+@-webkit-keyframes rotating {
+	to { -webkit-transform: rotate(-360deg); }
+}
+@-moz-keyframes rotating {
+	to { -moz-transform: rotate(-360deg); }
+}
+@-ms-keyframes rotating {
+	to { -ms-transform: rotate(-360deg); }
+}
+@-o-keyframes rotating {
+	to { -o-transform: rotate(-360deg); }
+}
+@keyframes rotating {
+	to { transform: rotate(-360deg); }
+}
+.bgnull {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 28px 65px 0px rgba(157, 172, 193, 0.25);
+  position: absolute;
+  left: 375px;
+  top: 3046px;
+  width: 1169px;
+  height: 440px;
+  z-index: 102;
+}
+.as-seen-on {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 80);
+  line-height: 1.083;
+  text-align: left;
+  position: absolute;
+  left: 903.844px;
+  top: 3730.504px;
+  z-index: 81;
+}
+.visa img{
+  background-image: url("imagesWallet/visa.png");
+  position: absolute;
+  left: 491px;
+  top: 3786px;
+  width: 50px;
+  height: 20px;
+  z-index: 80;
+}
+.mastercard img{
+  background-image: url("imagesWallet/mastercard.png");
+  position: absolute;
+  left: 641px;
+  top: 3786px;
+  width: 50px;
+  height: 20px;
+  z-index: 80;
+}
+.knopka img{
+  background-image: url("imagesWallet/knopka.png");
+  position: absolute;
+  left: 801px;
+  top: 3786px;
+  width: 50px;
+  height: 20px;
+  z-index: 80;
+}
+.paypal img{
+  background-image: url("imagesWallet/paypal.png");
+  position: absolute;
+  left: 951px;
+  top: 3786px;
+  width: 50px;
+  height: 20px;
+  z-index: 80;
+}
+.scrill img{
+  background-image: url("imagesWallet/scrill.png");
+  position: absolute;
+  left: 1081px;
+  top: 3786px;
+  width: 50px;
+  height: 20px;
+  z-index: 80;
+}
+.netterel img{
+  background-image: url("imagesWallet/netterel.png");
+  position: absolute;
+  left: 1191px;
+  top: 3786px;
+  width: 50px;
+  height: 20px;
+  z-index: 80;
+}
+.unionpay img{
+  background-image: url("imagesWallet/unionpay.png");
+  position: absolute;
+  left: 1295px;
+  top: 3786px;
+  width: 50px;
+  height: 20px;
+  z-index: 80;
+}
+.yandex img{
+  background-image: url("imagesWallet/yandex.png");
+  position: absolute;
+  left: 1395px;
+  top: 3786px;
+  width: 50px;
+  height: 20px;
+  z-index: 80;
+}
+.webmoney img{
+  background-image: url("imagesWallet/webmoney.png");
+  position: absolute;
+  left: 1495px;
+  top: 3786px;
+  width: 50px;
+  height: 20px;
+  z-index: 80;
+}
+.base-seen {
+   border-style: solid;
+  border-width: 1px;
+  border-color: rgb(240, 240, 240);
+  background-color: rgb(250, 250, 250);
+  position: absolute;
+  left: -5px;
+  top: 3556px;
+  width: 1928px;
+  height: 451px;
+  z-index: 77;
+}
+.December {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(82, 82, 197);
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 1013.937px;
+  top: 4128.502px;
+  z-index: 68;
+}
+.Newspaper {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 1013.924px;
+  top: 4242.25px;
+  width: 472px;
+  height: 206px;
+  z-index: 67;
+}
+.Team-specific {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 79);
+  line-height: 1.083;
+  text-align: left;
+  position: absolute;
+  left: 1012.834px;
+  top: 4186px;
+  z-index: 66;
+}
+.Agencyy {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.714;
+  text-align: center;
+  position: absolute;
+  left: 1449.947px;
+  top: 4135px;
+  z-index: 64;
+}
+.bgAgencyy {
+  border-radius: 3px;
+  background-color: rgb(50, 61, 80);
+  box-shadow: 0px 28px 65px 0px rgba(157, 172, 193, 0.25);
+  position: absolute;
+  left: 1438px;
+  top: 4135px;
+  width: 68px;
+  height: 30px;
+  z-index: 63;
+}
+.Read {
+  font-size: 10px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 2.695;
+  text-align: center;
+  -moz-transform: matrix( 1.5970024979184,0,0,1.59675405742821,0,0);
+  -webkit-transform: matrix( 1.5970024979184,0,0,1.59675405742821,0,0);
+  -ms-transform: matrix( 1.5970024979184,0,0,1.59675405742821,0,0);
+  position: absolute;
+  left: 1067.735px;
+  top: 4498.621px;
+  z-index: 72;
+}
+.BgRead {
+  border-radius: 6px;
+  background-image: -moz-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  position: absolute;
+  left: 1015px;
+  top: 4485px;
+  width: 157px;
+  height: 52px;
+  z-index: 71;
+}
+.bgblock1 {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 28px 65px 0px rgba(157, 172, 193, 0.25);
+  position: absolute;
+  left: 975px;
+  top: 4083px;
+  width: 570px;
+  height: 481px;
+  z-index: 60;
+}
+.DecemberV2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(82, 82, 197);
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 413.937px;
+  top: 4128.502px;
+  z-index: 52;
+}
+.NewspaperV2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 413.924px;
+  top: 4242.25px;
+  width: 472px;
+  height: 206px;
+  z-index: 51;
+}
+.Knowledge {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 79);
+  line-height: 1.083;
+  text-align: left;
+  position: absolute;
+  left: 412.937px;
+  top: 4186.988px;
+  z-index: 50;
+}
+.bgblockchain {
+  border-radius: 3px;
+  background-color: rgb(82, 82, 197);
+  box-shadow: 0px 28px 65px 0px rgba(157, 172, 193, 0.25);
+  position: absolute;
+  left: 812px;
+  top: 4135px;
+  width: 94px;
+  height: 30px;
+  z-index: 47;
+}
+.Blockchain {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.714;
+  text-align: center;
+  position: absolute;
+  left: 823.938px;
+  top: 4138.502px;
+  z-index: 48;
+}
+.bgReadV2 {
+  border-radius: 6px;
+  background-color: rgb(82, 82, 197);
+  position: absolute;
+  left: 415px;
+  top: 4485px;
+  width: 157px;
+  height: 52px;
+  z-index: 55;
+}
+.ReadV2 {
+  font-size: 10px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 2.695;
+  text-align: center;
+  -moz-transform: matrix( 1.5970024979184,0,0,1.59675405742821,0,0);
+  -webkit-transform: matrix( 1.5970024979184,0,0,1.59675405742821,0,0);
+  -ms-transform: matrix( 1.5970024979184,0,0,1.59675405742821,0,0);
+  position: absolute;
+  left: 467.735px;
+  top: 4498.621px;
+  z-index: 56;
+}
+.bgblockv2	 {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 28px 65px 0px rgba(157, 172, 193, 0.25);
+  position: absolute;
+  left: 375px;
+  top: 4083px;
+  width: 570px;
+  height: 481px;
+  z-index: 44;
+}
+.bgfull{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 6496px;
+  z-index: 3;
+}
+.Bg {
+  background-image: url("Bg.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 6496px;
+  z-index: 2;
+}
+
+
+.crypticoin {
+  font-size: 31px;
+  font-family: "Fixedsys";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 0.575;
+  -moz-transform: matrix( 0.68693819526521,0,0,0.68085106382979,0,0);
+  -webkit-transform: matrix( 0.68693819526521,0,0,0.68085106382979,0,0);
+  -ms-transform: matrix( 0.68693819526521,0,0,0.68085106382979,0,0);
+  position: absolute;
+  left: 391.945px;
+  top: 4835.816px;
+  z-index: 36;
+}
+
+
+.logofooter{
+  background-image: url("logofooter.png");
+  position: absolute;
+  left: 370.945px;;
+  top: 4835.816px;;
+  width: 570px;
+  height: 1px;
+  z-index: 80;
+}
+.twiter {
+  background-image: url("twiter.png");
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: rgb(50, 61, 79);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 374.937px;
+  top: 5100px;
+  z-index: 32;
+}
+
+.instagram {
+  background-image: url("instagram.png");
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: rgb(50, 61, 79);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 420.937px;
+  top: 5100px;
+  z-index: 32;
+}
+.facebook {
+  background-image: url("facebook.png");
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: rgb(50, 61, 79);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 460.937px;
+  top: 5100px;
+  z-index: 32;
+}
+.skype {
+  background-image: url("skype.png");
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: rgb(50, 61, 79);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 520.937px;
+  top: 5100px;
+  z-index: 32;
+}
+.Headquarters {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 104, 128);
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 373.844px;
+  top: 4896.22px;
+  width: 260px;
+  height: 158px;
+  z-index: 31;
+}
+.bitgo img {
+  background-image: url("bitgo.png");
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: rgb(50, 61, 79);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 500.937px;
+  top: 5100px;
+  z-index: 32;
+}
+.comod  {
+  background-image: url("bitgo.png");
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: rgb(50, 61, 79);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 630.937px;
+  top: 5092px;
+  z-index: 32;
+}
+.bgfoot {
+  background-color: rgb(21, 29, 42);
+  position: absolute;
+  left: 0px;
+  top: 4720px;
+  width: 1920px;
+  height: 500px;
+  z-index: 11;
+}
+.Informationv2 {
+  font-size: 20px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 844.87px;
+  top: 4814px;
+  z-index: 23;
+}
+.Payment {
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 845.044px;
+  top: 4894.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 22;
+}
+.Fee{
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 845.044px;
+  top: 4934.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 22;
+}
+.Getting{
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 845.044px;
+  top: 4974.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 22;
+}
+.Identity{
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 845.044px;
+  top: 5014.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 22;
+}
+.Verification{
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 845.044px;
+  top: 5054.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 22;
+}
+.Productsv1 {
+  font-size: 20px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 1174.87px;
+  top: 4814.816px;
+  z-index: 17;
+ 
+}
+
+.Productss {
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 1174.87px;
+  top: 4894.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 16;
+}
+.GDAX{
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 1174.87px;
+  top: 4934.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 16;
+}
+.Platform{
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 1174.87px;
+  top: 4974.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 16;
+}
+.Merchant{
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 1174.87px;
+  top: 5014.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 16;
+}
+.Server{
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 1174.87px;
+  top: 5054.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 16;
+}
+.forma {
+  opacity: 5.29;
+  position: absolute;
+  left: 449px;
+  top: 4725px;
+  width: 1000px;
+  height: 200px;
+  z-index: 12;
+}
+.About_End{
+  font-size: 13px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 2.077;
+  position: absolute;
+  left: 1060.937px;
+  top: 5235.5px;
+  z-index: 8;
+}
+.About_End:hover{
+	background: aqua;
+	color: black;
+}
+.Work_End{
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgb(82, 82, 197);
+    line-height: 2.077;
+    position: absolute;
+	left: 1130.937px;
+	top: 5235.5px;
+    z-index: 8;
+}
+.Work_End:hover{
+	background: aqua;
+	color: black;
+}
+.Features{
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgb(82, 82, 197);
+    line-height: 2.077;
+    position: absolute;
+    left: 1200.937px;
+	top: 5235.5px;
+    z-index: 8;
+}
+.Features:hover{
+	background: aqua;
+	color: black;
+}
+.Contact_us{
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgb(82, 82, 197);
+    line-height: 2.077;
+    position: absolute;
+    left: 1270.937px;
+	top: 5235.5px;
+    z-index: 8;
+}
+.Contact_us:hover{
+	background: aqua;
+	color: black;
+}
+
+.tophive{
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgb(91, 104, 128);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 373px;
+    top: 5235px	;
+    z-index: 7;
+}
+.tophive {
+  font-size: 13px;
+  font-family: "Roboto";
+  color: rgb(91, 104, 128);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 373.937px;
+  top: 5235.757px;
+  z-index: 7;
+}
+.BaseEnd {
+  background-color: rgb(26, 35, 51);
+  position: absolute;
+  left: 0px;
+  top: 5220px;
+  width: 1920px;
+  height: 59px;
+  z-index: 6;
+}
+
+.dan {
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  width: 392px;
+  height: 1px;
+  z-index: 2;
+}
+
+
+
+
+</style>
+</head>
+<body>
+	<div class="head"><!-- start block: "head" -->
+		<div class="menu"> <!-- start block to  menu  -->
+			<div class="menuv2"> <!-- start first version menu -->
+					<p>Work</p>
+			</div> <!-- end first version menuv2 -->
+			<div class="menuv3"> <!-- start second version menu -->
+					<p>Features</p>
+			</div> <!-- end second version menuv3 -->
+			<div class="menuv4"> <!-- start third version menu -->
+					<p>Custommer</p>
+			</div> <!-- end third version menuv4 -->
+		</div> <!-- end block to menu -->
+		
+			<div class="logo-head"> <!-- start logo-head -->
+				<p class="Crypticoin">Crypticoin</p>
+			</div> <!-- endc logo-head -->
+			<div class="top-logo"> <!-- start top-logo -->
+				<a href=""><img src="imagesWallet/logoheader.png" alt=""></a> <!-- photo logo -->
+			</div> <!-- end top-logo -->
+			<div class="links"> <!-- start  clearance entry and exit -->
+				<a href="file:///C:/Users/%D0%94%D0%B8%D0%BC%D0%B0/Desktop/%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BA%D0%B0/index.html"><p class="sign">sign</p></a>
+				<a href="file:///C:/Users/%D0%94%D0%B8%D0%BC%D0%B0/Desktop/%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BA%D0%B0/index.html"><p class="up">up</p></a>
+				<div class="strelka"> <!-- start first arrow -->
+					<p class="strila"></p>
+				</div> <!-- end first arrow --> 
+				<div class="strelkav2"> <!-- start second arrow -->
+					<p class="strilav2">
+				</div> <!-- end second arrow -->
+				<div class="flag"> <!-- start flag -->
+					<p class="english">English</p>
+					<p class="flejek"><img src="imagesWallet/vector.png" alt=""></p><!-- photo flag -->
+					<p class="btcv2">btc</p>
+				</div> <!-- end flag -->
+			</div> <!-- end block links -->
+	</div><!-- end block: "head" -->
+	
+	<div class="Slider"><!-- start block: "Slider" -->
+		<p class="Social">Invest in Bitcoin on the World’s Leading Social Trading Network</p>
+		<p class="buy">How to buy bitcoin</p>
+	</div><!-- end block: "Slider" -->
+	
+	<div class="Service"><!-- start block: "Service" -->
+		<p class="znak"></p>
+		<p class="Over">Over 6,000,000 Registered Users</p>
+		<p class="Creative"><a name="for">Bitcoin wallet features</a></p>
+		<div class="row01"><!-- start block with paragraph -->
+			<div class="03"><!-- start first paragraph -->
+				<p class="protected">If you are a buyer you are 100% protected. We verify <br>and check all of our sellers for your safety. Pay with confidence, 2-factor, escrow, highest level encryption <br>and professionally audited security.</p>
+				<p class="Security">Security</p>
+				<p class="Securityimg"><img src="imagesWallet/bitcoinmixanizm.png"></p><!-- photo bitcoinmixanizm -->
+			</div><!-- end first paragraph -->
+			
+			<div class="02"><!-- start second paragraph -->
+				<p class="buying">First time buying bitcoin? Have questions? Once you <br>start a trade an experienced seller will guide you <br>through the process in a one on one live chat. Start by finding an offer you like!</p>
+				<p class="Advanced">Advanced Trading Platform</p>
+				<p class="bitcoinvroste"><img src="imagesWallet/bitcoinvroste.png"></p><!-- photo bitcoinvroste -->
+			</div><!-- end second paragraph -->
+			
+			<div class="01"><!-- start first paragraph -->
+				<p class="directly">Buying bitcoin directly from other people makes it even simpler. Just sign up and buy right away. You pay <br>sellers directly from your personal accounts.</p>
+				<p class="Same">Same Day Funding & Withdrawal</p>
+				<p class="inet"><img src="imagesWallet/inet.png"></p><!-- photo inet -->
+			</div><!-- end first paragraph -->
+		</div><!-- end block with paragraph -->
+		
+		<div class="row02"><!-- start second block with paragraph -->
+			<div class="03v2"><!-- start thirdv2 paragraph --> 
+				<p class="Creating">Creating content is time-consuming. Spend less time perfecting content with Automations. Automations are <br>posts that are generated using your data <br>and published on your behalf.</p>
+				<p class="Customizable">Customizable Interface</p>
+				<p class="mobilka"><img src="imagesWallet/mobilka.png"></p><!-- photo mobilka -->
+			</div><!-- end thirdv2 paragraph -->
+			
+			<div class="02v2"><!-- start secondv2 paragraph -->
+				<p class="have">You have goals for your business. Measure the success <br>of those goals using Email Digest. Email Digest sends <br>you daily or weekly emails with the metrics you need. <br>One email, all your data.</p>
+				<p class="Leverage">Leverage</p>
+				<p class="bitcoinzamok"><img src="imagesWallet/bitcoinzamok.png"></p><!-- photo bitcoinzamok -->
+			</div><!-- end secondv2 paragraph -->
+			
+			<div class="01v2"><!-- start firstv2 paragraph -->
+				<p class="Want">Want to buy $20 of bitcoin fast? Gift cards are accepted.<br> Buy one with cash (save the receipt too) at your local drugstore and exchange it here for instant bitcoin.</p>
+				<p class="Digital">Digital Asset Exchange</p>
+				<p class="bitcoinvkruge"><img src="imagesWallet/bitcoinvkruge.png"></p><!-- photo bitcoinvkruge -->
+			</div><!-- end firstv2 paragraph -->
+		</div><!-- end second block with paragraph -->
+	</div><!-- end block: "Service" -->
+	
+	<div class="Counter"><!-- start block: "Counter" -->
+		<div class="head-counter"><!-- start block: "head-counter" -->
+			<p class="walletv2">Why use Bitcoin wallet?</p>
+			<p class="bgcounter"></p>
+			<p class="Leading">Invest in Bitcoin on the World’s Leading Social Trading Network</p>
+			<p class="line"></p><!-- line -->
+			<p class="linev2"></p><!-- line -->
+			<div class="03v3"><!-- start 03v3 -->
+				<p class="pidesat">5,098</p>
+				<p class="TRUSTED">TRUSTED VENDORS</p>
+			</div><!-- end block 03v3 -->
+
+			<div class="02v3"> <!-- start block 02v2 -->
+				<p class="simdesat">76,800+</p>
+				<p class="HAPPY">HAPPY CUSTOMERS</p>
+			</div><!-- end block 02v3 -->
+			
+			<div class="01v3"><!-- start block 01v3 -->
+				<p class="ziro">50,000+</p>
+				<a name="featuresv2"><p class="BOUGHT">BITCOINS BOUGHT</p></a>
+				<p class="krugg"><img src="imagesWallet/krugg.png"></p><!-- photo krugg -->
+				<p class="graph"><img src="imagesWallet/shar.png"></p><!-- photo shar -->
+			</div><!-- end block 01v3 -->
+		</div><!-- end block: "head-counter" -->
+	</div><!-- end block: "Counter" -->
+	
+	<div class="Featurs"><!-- start block: "Features" -->
+		<div class="01+"><!-- start block: "01+" -->
+			<p class="and">Trusted and Secure</p>
+			<p class="bg-null"></p><!-- background null -->
+			<p class="hover"></p>
+			<p class="large">As a large organization with exacting performance and unique SLA requirements, our team evaluated<br>several hosting providers in addition to rolling out our own self-hosted proof-of-concept. Our success <br>criteria was in finding a solution that makes sure our WordPress sites have consistently fast page<br> speed performance (millions of visits per month).</p>
+			<p class="iconn"><img src="imagesWallet/fotobutton.png"></p><!-- photo fotobutton -->
+			<a href="https://changelly.com/exchange/xrp/btc/1"><p class="truly">Try our truly friendly interface!</p></a>
+			<p class="linev3"></p><!-- line -->
+		</div><!-- end block: "01+" -->
+		
+		<div class="02+"><!-- start block: "02+" -->
+			<p class="Fees">0% Maker Fees</p>
+			<p class="organization">As a large organization with exacting performance and unique SLA requirements, our team evaluated <br>several hosting providers in addition to rolling out our own self-hosted proof-of-concept. Our success<Br> criteria was in finding a solution that makes sure our WordPress sites have consistently fast page <Br>speed performance (millions of visits per month).</p>
+			<a href="https://www.bitfinex.com/fees"><p class="stories">Load more stories</p></a>
+			<p class="linev4"></p><!-- line -->
+			<p class="whitekrug"><img src="imagesWallet/whitekrug.png"></p><!-- photo whitekrug -->
+			<p class="bgnull"></p><!-- background null-->
+		</div><!-- end block: "02+" -->
+	</div><!-- end block: "Features" -->
+	
+	<div class="As-seen-on"><!-- start block: "As-seen-on" -->
+		<div class="elementi"><!-- start block: "elementi" -->
+			<p class="as-seen-on">As seen on</p>
+			<div class="visa">
+				<a href="https://www.visa.com.ua/uk_UA"><img src="imagesV2/visa.png"></a><!-- photo visa -->
+			</div>
+			<div class="mastercard">
+				<a href="https://www.mastercard.ua/uk-ua.html"><img src="imagesV2/mastercard.png"></a><!-- photo mastercard -->
+			</div>
+			<div class="knopka">
+				<img src="imagesV2/knopka.png"><!-- photo knopka -->
+			</div>
+			<div class="paypal">
+				<a href="https://www.etsy.com/market/space_card"><img src="imagesV2/paypal.png"></a><!-- photo paypal -->
+			</div>
+			<div class="scrill">
+				<a href="https://www.skrill.com/en/pay-online/?gclid=CjwKCAjw9dboBRBUEiwA7Vrrzax9ufgupARwuFIbK6mNGUymMa6qquYUMmLOVrR27YzTc8iYE-MRtRoCxxwQAvD_BwE&gclsrc=aw.ds"><img src="imagesV2/scrill.png"></a><!-- photo scrill -->
+			</div>
+			<div class="netterel">
+				<a href="https://www.neteller.com/ru"><img src="imagesV2/netterel.png"></a><!-- photo neteller -->
+			</div>
+			<div class="unionpay">
+				<a href="https://www.unionpayintl.com/ru"><img src="imagesV2/unionpay.png"></a><!-- photo unionpay -->
+			</div>
+			<div class="webmoney">
+				<a href="https://www.webmoney.ru/"><img src="imagesWallet/webmoney.png"></a><!-- photo webmoney -->
+			</div>
+			<div class="yandex">
+				<a href="https://yandex.ua/"><img src="imagesV2/yandex.png"></a><!-- photo yandex -->
+			</div>
+				<div class="base-seen">
+				
+				</div>
+		</div><!-- end block: "elementi" -->
+	</div><!-- end block: "as-seen-on" -->
+	
+	<div class="News"><!-- start block: "News" -->
+		<div class="block1"><!-- start block: "block1" -->
+			<p class="December">December 2018</p>
+			<p class="Newspaper">Newspaper headlines around the world tell the same story. The massive<br> increase in digital currency trading shows no sign of slowing down, and the industry is working very hard to keep pace with the meteoric levels of<Br> demand we are experiencing. This surge in interest is unprecedented, and the<Br> pace of growth continues to outstrip even the most optimistic<Br>projections forecast by the industry. Although this deluge of attention<br> bodes well for the future of digital currencies, and our position as the<br> longest established digital currency exchange in the world, our resources<br> have been stretched to capacity.</p>
+			<p class="Team-specific ">Team-specific Training</p>
+			<p class="Agencyy">Agency</p>
+			<p class="bgAgencyy"></p><!-- background Agency -->
+			<a href="https://www.bitcoin-studio.com/"><p class="Read">Read More</p></a>
+			<p class="BgRead"></p><!-- background Read -->
+			<p class="bgblock1"><!-- background block1 -->
+		</div><!-- end block: "block1 -->
+		
+		<div class="blockv2"><!-- start block: blockv2 -->
+			<p class="DecemberV2">December 2018</p>
+			<p class="NewspaperV2">Newspaper headlines around the world tell the same story. The massive<br> increase in digital currency trading shows no sign of slowing down, and the industry is working very hard to keep pace with the meteoric levels of<Br> demand we are experiencing. This surge in interest is unprecedented, and the<Br> pace of growth continues to outstrip even the most optimistic<Br>projections forecast by the industry. Although this deluge of attention<br> bodes well for the future of digital currencies, and our position as the<br> longest established digital currency exchange in the world, our resources<br> have been stretched to capacity.</p>
+			<p class="Knowledge">Knowledge-based Consulting</p>
+			<p class="bgblockchain"></p><!-- background blockchain -->
+			<p class="Blockchain">Blockchain</p>
+			<p class="ReadV2">Read More</p><!-- background ReadV2 -->
+			<p class="bgReadV2"></p><!-- background bgReadV2 -->
+			<p class="bgblockv2"></p><!-- background bgblockv2 -->
+		</div><!-- end block: "blockv2 -->
+	</div><!-- end block: "News " -->
+	
+	<div class="footer"><!-- start block: "footer" -->
+		<div class="about"><!-- start block: "about" -->
+			<br><p class="linev7"><img src="imagesWallet/linefooter.png"></p><!-- line -->
+			<p class="crypticoin">Crypticoin</p>
+			<p class="logofooter"><img src="imagesWallet/logofooter.png"></p><!-- photo logo footer -->
+			<div class="socseti"><!-- start block: "socseti" -->
+				<div class="twiter">
+					<a href="https://twitter.com/?lang=uk"><img src="imagesWallet/twiter.png"></a><!-- photo twiter -->
+				</div>
+				<div  class="instagram">
+					<a href="https://www.instagram.com/art_cafe_stare_misto"><img src="imagesWallet/instagram.png"></a><!-- photo instagram -->
+				</div>	
+				<div class="facebook">
+					<a href="https://www.facebook.com/"><img src="imagesWallet/facebook.png"></a><!-- photo facebook -->
+				</div>
+				<div class="bitgo">
+					<a href="https://www.bitgo.com/"><img src="imagesWallet/bitgo.png"></a><!-- photo bitgo -->
+				</div>
+				<div class="comod">
+					<a href="https://forum.bits.media/index.php?/profile/61905-comod/"><img src="imagesWallet/comod.png"></a><!-- photo comod -->
+				</div>
+			</div><!-- end block: "socseti" -->
+			<p class="Headquarters">Headquarters:<br>3422 Old Capitol Trail PMB# 989<br>Wilmington DE 19808<br><br><br>Phone: +1 (865) 972-95385<br>Support Email (FAST): help@domain.com 
+	Business Email: help@domain.com	</p>	
+				<div class="bgfoot"><!-- background foot -->
+				
+				</div>
+				<div class="Information"><!-- start block: "Information" -->
+					<p class="Informationv2">Information</p>
+					<a href="https://en.bitcoin.it/wiki/Payment_methods"><p class="Payment">  Payment Options</p></a>
+					<a href="https://cex.io/fee-schedule"><p class="Fee"> Fee Schedule</p></a>
+					<a href="https://www.bitcoinmining.com/getting-started/"><p class="Getting">  Getting Started</p></a>
+					<a href="https://support.cex.io/hc/en-us/articles/215744957-Identity-and-Address-Verification-on-CEX-IO"><p class="Identity">  Identity Verification Guide</p></a>
+					<a href="https://support.cex.io/hc/en-us/articles/215994438-Payment-Card-Verification-Guide"><p class="Verification">  Card Verification Guide</p></a>
+				</div><!-- end block: "Information" -->
+				
+				<div class="Products"><!-- start block: "Products" -->
+					<p class="Productsv1">Products</p>
+					<a href="https://www.coinbase.com/signin"><p class="Productss">  Buy/Sell Digital Currency</p></a>
+					<a href="https://pro.coinbase.com/"><p class="GDAX">  GDAX </p></a> 
+					<a href="https://developer.bitcoin.com/"><p class="Platform">  Developer Platform</p></a>
+					<a href="https://www.bitcoin.com/merchant-solutions/"><p class="Merchant">  Merchant Tools</p></a>
+					<a href="https://www.blockchain.com/api"><p class="Server">  Easy Bitcoin API Server</p></a>
+					<div class="forma"><!-- photo bigb -->
+						<img src="imagesV2/bigb.png"><!-- background-photo bigb -->
+					</div>
+				</div><!-- end block: "Products" -->
+		</div><!-- end block: "about" -->
+	</div><!-- end block: "footer" -->
+	
+	<div class="end"><!-- start block:"end" -->
+		<p class="About_End"><a href="#for">About us</a></p>
+        <div class="Work_End">
+			<a href="file:///C:/Users/%D0%94%D0%B8%D0%BC%D0%B0/Desktop/index.html">Work</a>
+		</div>
+        <p class="Features">Features</p>
+		<p class="Contact_us">Contact us</p>
+        <p class="tophive">@tophive</p>
+		<div class="BaseEnd">
+		
+		</div><!-- background end -->
+		<p class="dan"><img src="imagesV2/bgseenon.png"><!-- background as-seen-on -->
+	</div><!-- end block:"end" -->
+	
+<script>
+
+</script>
+</body>
+</html>

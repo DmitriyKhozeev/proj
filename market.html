@@ -1,0 +1,2918 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bitcoins.com</title>
+ <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="id=edge" />
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.head {
+	  background-color: rgb(2, 35, 124);
+	  position: absolute;
+	  left: -2px;
+	  top: 0px;
+	  width: 1920px;
+	  height: 680px;
+	  z-index: 159;
+	}
+
+	.menu {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 2520px;
+  height: 1px;
+  z-index: 286;
+}
+	.menuv2 {
+  font-size: 13px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.364;
+  text-align: left;
+  -moz-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  -webkit-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  -ms-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  position: absolute;
+  left: 295.75px;
+  top: 46.634px;
+  z-index: 285;
+}
+.menuv2:hover{
+	background: aqua;
+	color: black;
+}
+.menuv3 {
+  font-size: 13px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.364;
+  text-align: left;
+  -moz-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  -webkit-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  -ms-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  position: absolute;
+  left: 380.75px;
+  top: 46.634px;
+  z-index: 285;
+}
+.menuv3:hover{
+	background: aqua;
+	color: black;
+}
+.menuv4{
+  font-size: 13px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.364;
+  text-align: left;
+  -moz-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  -webkit-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  -ms-transform: matrix( 1.01518321357757,0,0,1.01504978004168,0,0);
+  position: absolute;
+  left: 490.75px;
+  top: 46.634px;
+  z-index: 285;
+}
+.menuv4:hover{
+	background: aqua;
+	color: black;
+}
+
+.Crypticoin {
+  font-size: 31px;
+  font-family: "Fixedsys";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 0.575;
+  -moz-transform: matrix( 0.68693819526521,0,0,0.68085106382979,0,0);
+  -webkit-transform: matrix( 0.68693819526521,0,0,0.68085106382979,0,0);
+  -ms-transform: matrix( 0.68693819526521,0,0,0.68085106382979,0,0);
+  position: absolute;
+  left: 880.945px;
+  top: 46.634px;
+  z-index: 288;
+}
+.top-logo {
+    position: absolute;
+    top: 40px;
+    left: 855px;
+    z-index: 285;
+}
+.sign {
+  font-size: 13px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.364;
+  text-align: left;
+  position: absolute;
+  left: 1483.12px;
+  top: 46.634px;
+  z-index: 300;
+  overflow: hidden; 
+}
+.sign:hover{
+	background: aqua;
+	color: black;
+}
+.up{
+	font-size: 13px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.364;
+  text-align: left;
+  position: absolute;
+  left: 1522.12px;
+  top: 46.634px;
+  z-index: 300;
+  overflow: hidden; 
+}
+.up:hover{
+	background: aqua;
+	color: black;
+}
+.strelka:after{
+    content: '';
+    border: 8px solid transparent;
+    border-top: 8px solid rgb(211, 177, 227);
+    position: absolute;
+    margin-left: -12px;
+    width: 0;
+    top: 50.634px;
+    left: 1373px;
+    z-index: 96;
+}
+.strelkav2 {
+   content: '';
+    border: 8px solid transparent;
+    border-top: 8px solid rgb(211, 177, 227);
+    position: absolute;
+    margin-left: -12px;
+    width: 0;
+    top: 50.634px;
+    left: 1474px;
+    z-index: 96;
+}
+.flag {
+  background-image: url("imagesWallet/icon.png");
+  position: absolute;
+  left: 1392px;
+  top: 46.634px;
+  width: 14px;
+  height: 11px;
+  z-index: 294;
+}
+.btcv2 {
+   font-size: 12px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  right: 49px;
+  top: 0.9px;
+  z-index: 293;
+  overflow: hidden; 	
+  }
+.english {
+  font-size: 12px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 17px;
+  top: 0.9px;
+  z-index: 293;
+  overflow: hidden;
+}
+.Markett {
+  font-size: 72px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  line-height: 1.2;
+  text-align: center;
+  text-shadow: 0px 11px 81px rgba(27, 41, 58, 0.48);
+  position: absolute;
+  left: 830.844px;
+  left: 830.844px;
+  top: 285.3px;
+  z-index: 352;
+}
+.bgbtnroz {
+  background-image: -moz-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  position: absolute;
+  left: 1325px;
+  top: 797px;
+  width: 194px;
+  height: 63px;
+  z-index: 341;
+}
+
+.bgcoin {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 28px 65px 0px rgba(157, 172, 193, 0.24);
+  position: absolute;
+  left: 376px;
+  top: 781px;
+  width: 1169px;
+  height: 1060px;
+  z-index: 128;
+}
+.Serch {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgba(255, 255, 255, 0.769);
+  line-height: 1.625;
+  text-align: left;
+  position: absolute;
+  left: 1383.162px;
+  top: 814.5px;
+  z-index: 342;
+}
+.container-1 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+
+}
+.btccc {
+  font-size: 20px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 80);
+  font-weight: bold;
+  line-height: 1.3;
+  text-align: left;
+  position: absolute;
+  left: 487.87px;
+  top: 815px;
+  z-index: 338;
+}
+.ETH {
+  font-size: 20px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 80);
+  font-weight: bold;
+  line-height: 1.3;
+  text-align: left;
+  position: absolute;
+  left: 580.87px;
+  top: 815px;
+  z-index: 338;
+}
+.NEO {
+  font-size: 20px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 80);
+  font-weight: bold;
+  line-height: 1.3;
+  text-align: left;
+  position: absolute;
+  left: 673.87px;
+  top: 815px;
+  z-index: 338;
+}
+.KCS {
+  font-size: 20px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 80);
+  font-weight: bold;
+  line-height: 1.3;
+  text-align: left;
+  position: absolute;
+  left: 766.87px;
+  top: 815px;
+  z-index: 338;
+}
+.BCH {
+  font-size: 20px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 80);
+  font-weight: bold;
+  line-height: 1.3;
+  text-align: left;
+  position: absolute;
+  left: 859.87px;
+  top: 815px;
+  z-index: 338;
+}
+.bgactive {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 458px;
+  top: 804px;
+  width: 87px;
+  height: 72px;
+  z-index: 337;
+}
+.fullbgactive {
+  background-color: rgb(82, 82, 197);
+  opacity: 0.078;
+  position: absolute;
+  left: 374px;
+  top: 781px;
+  width: 1171px;
+  height: 94px;
+  z-index: 334;
+}
+.xatkka img	{
+ position: absolute;
+  left: 396px;
+  top: 819px;
+   width: 28px;
+  height: 28px;
+  z-index: 328;
+}
+.greybg {
+  background-color: rgb(50, 61, 80);
+  position: absolute;
+  left: 374px;
+  top: 781px;
+  width: 71px;
+  height: 1060px;
+  z-index: 320;
+}
+.bitcoin {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  left: 396px;
+  top: 906px;
+  width: 28px;
+  height: 28px;
+  z-index: 325;
+}
+.lvlup {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  left: 396px;
+  top: 990px;
+  width: 28px;
+  height: 28px;
+  z-index: 325;
+}
+.mexanizm {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  left: 396px;
+  top: 1074px;
+  width: 28px;
+  height: 28px;
+  z-index: 325;
+}
+.bitcoini img	{
+  position: absolute;
+  left: 377px;
+  top: 1750.501px;
+   width: 66px;
+  height: 88px;
+  z-index: 328;
+}
+.linev1 {
+  background-color: rgb(235, 237, 241);
+  position: absolute;
+  left: 445px;
+  top: 946px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.Operation {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1422.938px;
+  top: 897.251px;
+  z-index: 314;
+}
+.Fast {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1251.938px;
+  top: 897.251px;
+  z-index: 313;
+}
+.Volume {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1093.901px;
+  top: 897.251px;
+  z-index: 312;
+}
+.Amount {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 927.937px;
+  top: 897.251px;
+  z-index: 311;
+}
+.Change {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 809.937px;
+  top: 897.251px;
+  z-index: 310;
+}
+.Last {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 636.938px;
+  top: 901.501px;
+  z-index: 309;
+}
+
+.Assets {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 106, 132);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 484.937px;
+  top: 897.001px;
+  z-index: 308;
+}
+.Buy-Sell {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1260.938px;
+  top: 1800.001px;
+  z-index: 305;
+}
+.dvisti {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1090.294px;
+  top: 1800.001px;
+  z-index: 304;
+}
+.simsot {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 925.871px;
+  top: 1800.001px;
+  z-index: 303;
+}
+.minusnull {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 95, 115);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 814.938px;
+  top: 1801.001px;
+  z-index: 302;
+}
+.dolari {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 80);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 592.786px;
+  top: 1801.001px;
+  z-index: 301;
+}
+.ltc {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  position: absolute;
+  left: 483.937px;
+  top: 1802.501px;
+  z-index: 298;
+}
+.rost{	
+  position: absolute;
+  left:  1440.938px;
+  top: 1802.501px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.ltcimg{
+  position: absolute;
+  left:  463.937px;
+  top: 1806.501px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.bg02 {
+  background-color: rgb(250, 250, 250);
+  position: absolute;
+  left: 445px;
+  top: 1787px;
+  width: 1098px;
+  height: 54px;
+  z-index: 297;
+}
+
+.Buy-Sellv2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1260.938px;
+  top: 1744.001px;
+  z-index: 294;
+}
+.chotirista {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1090.937px;
+  top: 1744.001px;
+  z-index: 293;
+}
+.patsot {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 927.35px;
+  top: 1744.001px;
+  z-index: 292;
+}
+.plusvisim {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 813.104px;
+  top: 1745.001px;
+  z-index: 291;
+}
+.strela {
+  font-size: 14px;
+  font-family: "Ionicons";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 592.044px;
+  top: 1745.001px;
+  z-index: 290;
+}
+.rostv2{
+  position: absolute;
+  left:  1440.938px;
+  top: 1745.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.ven {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  position: absolute;
+  left: 483.901px;
+  top: 1745.501px;
+  z-index: 286;
+}
+.venimg{
+  position: absolute;
+  left:  463.937px;
+  top: 1750px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.basestrila {
+  background-color: rgb(0, 206, 98);
+  opacity: 0.141;
+  position: absolute;
+  left: 587px;
+  top: 1749px;
+  width: 103px;
+  height: 18px;
+  z-index: 288;
+}
+
+.Buy-Sellv3 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1260.938px;
+  top: 1689.001px;
+  z-index: 283;
+}
+.dvistip {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1090.294px;
+  top: 1689.001px;
+  z-index: 282;
+}
+.simsotfour {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 925.871px;
+  top: 1690.001px;
+  z-index: 281;
+}
+.minusnullik {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 95, 115);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 814.938px;
+  top: 1690.001px;
+  z-index: 280;
+}
+.dolaris {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 80);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 592.786px;
+  top: 1690.001px;
+  z-index: 279;
+}
+.drgn {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  position: absolute;
+  left: 483.937px;
+  top: 1690.001px;
+  z-index: 276;
+}
+.rostv3{
+  position: absolute;
+  left:  1440.938px;
+  top: 1690.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.drgnimg{
+  position: absolute;
+  left:  463.937px;
+  top: 1696px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.bg03 {
+  background-color: rgb(250, 250, 250);
+  position: absolute;
+  left: 445px;
+  top: 1676px;
+  width: 1098px;
+  height: 54px;
+  z-index: 275;
+}
+
+.Buy-Sellv4 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1260.938px;
+  top: 1633.001px;
+  z-index: 272;
+}
+.chotiristav2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1090.937px;
+  top: 1633.001px;
+  z-index: 271;
+}
+.patsotv2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 927.35px;
+  top: 1633.001px;
+  z-index: 270;
+}
+.plusvisimv2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 813.104px;
+  top: 1634.001px;
+  z-index: 269;
+}
+.strelav2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 80);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 595.786px;
+  top: 1634.001px;
+  z-index: 268;
+}
+.qlc {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  position: absolute;
+  left: 482.937px;
+  top: 1634.001px;
+  z-index: 265;
+}
+.qlcimg{
+  position: absolute;
+  left:  463.937px;
+  top: 1639.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.rostv4{
+  position: absolute;
+  left:  1440.938px;
+  top: 1639.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+
+.Buy-Sellv5 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1260.938px;
+  top: 1577.001px;
+  z-index: 262;
+}
+.dvistipv2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1090.294px;
+  top: 1577.001px;
+  z-index: 261;
+}
+.simsotfourv2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 925.871px;
+  top: 1577.001px;
+  z-index: 260;
+}
+.minusnullikv2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 95, 115);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 814.938px;
+  top: 1578.001px;
+  z-index: 259;
+}
+.dolarisv2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 80);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 592.786px;
+  top: 1577.001px;
+  z-index: 258;
+}
+.lend {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  position: absolute;
+  left: 483.937px;
+  top: 1577.001px;
+  z-index: 255;
+}
+.lendimg{
+  position: absolute;
+  left: 463.937px;
+  top: 1584.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.rostv5{
+  position: absolute;
+  left:  1440.938px;
+  top: 1577.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.bg04 {
+  background-color: rgb(250, 250, 250);
+  position: absolute;
+  left: 445px;
+  top: 1564px;
+  width: 1098px;
+  height: 54px;
+  z-index: 254;
+}
+.Buy-Sellv6 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1260.938px;
+  top: 1521.001px;
+  z-index: 251;
+}
+.chotiristav3 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1090.937px;
+  top: 1521.001px;
+  z-index: 250;
+}
+.patsotv3 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 927.35px;
+  top: 1521.001px;
+  z-index: 249;
+}
+.plusvisimv3 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 813.104px;
+  top: 1522.001px;
+  z-index: 248;
+}
+.strelav3 {
+  font-size: 14px;
+  font-family: "Ionicons";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 592.044px;
+  top: 1522.001px;
+  z-index: 247;
+}
+.utk {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  position: absolute;
+  left: 482.937px;
+  top: 1522.001px;
+  z-index: 243;
+}
+.utkimg{
+  position: absolute;
+  left: 463.937px;
+  top: 1528.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.rostv6{
+  position: absolute;
+  left:  1440.938px;
+  top: 1522.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+
+.Buy-Sellv7 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1260.938px;
+  top: 1468.001px;
+  z-index: 240;
+}
+.dvistipv3 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1090.294px;
+  top: 1467.001px;
+  z-index: 239;
+}
+.simsotfourv3 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 925.871px;
+  top: 1468.001px;
+  z-index: 238;
+}
+.minusnullikv3 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 95, 115);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 814.938px;
+  top: 1468.001px;
+  z-index: 237;
+}
+.dolarisv3 {
+  font-size: 16px;
+  font-family: "Ionicons";
+  color: rgb(255, 95, 115);
+  line-height: 1.625;
+  text-align: center;
+  position: absolute;
+  left: 592.037px;
+  top: 1468.001px;
+  z-index: 236;
+}
+.bgdolarisv3 {
+  background-color: rgb(255, 95, 115);
+  opacity: 0.141;
+  position: absolute;
+  left: 587px;
+  top: 1472px;
+  width: 117px;
+  height: 18px;
+  z-index: 234;
+}
+.ETHV2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  position: absolute;
+  left: 483.937px;
+  top: 1469.501px;
+  z-index: 232;
+}
+.etcimg{
+  position: absolute;
+  left: 463.937px;
+  top: 1474.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.rostv7{
+  position: absolute;
+  left:  1440.938px;
+  top: 1469.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.bg05 {
+  background-color: rgb(250, 250, 250);
+  position: absolute;
+  left: 445px;
+  top: 1454px;
+  width: 1098px;
+  height: 54px;
+  z-index: 231;
+}
+
+.Buy-Sellv8 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1260.938px;
+  top: 1411.001px;
+  z-index: 228;
+}
+.chotiristav4 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1090.937px;
+  top: 1411.001px;
+  z-index: 227;
+}
+.patsotv4 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 927.35px;
+  top: 1411.001px;
+  z-index: 226;
+}
+.plusvisimv4 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 813.104px;
+  top: 1412.001px;
+  z-index: 225;
+}
+.strelav4 {
+  font-size: 14px;
+  font-family: "Ionicons";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 592.044px;
+  top: 1411.001px;
+  z-index: 224;
+}
+.act {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  position: absolute;
+  left: 483.937px;
+  top: 1412.501px;
+  z-index: 220;
+}
+.actimg{
+  position: absolute;
+  left: 463.937px;
+  top: 1418.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.rostv8{
+  position: absolute;
+  left:  1440.938px;
+  top: 1411.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.basestrilav2 {
+  background-color: rgb(0, 206, 98);
+  opacity: 0.141;
+  position: absolute;
+  left: 587px;
+  top: 1416px;
+  width: 104px;
+  height: 18px;
+  z-index: 222;
+}
+.Buy-Sellv9 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1260.938px;
+  top: 1354.001px;
+  z-index: 217;
+}
+.dvistipv4 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1090.294px;
+  top: 1354.001px;
+  z-index: 216;
+}
+.simsotfourv4 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 925.871px;
+  top: 1355.001px;
+  z-index: 215;
+}
+.minusnullikv4 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 95, 115);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 814.938px;
+  top: 1355.001px;
+  z-index: 214;
+}
+.dolarisv4 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 80);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 592.786px;
+  top: 1355.001px;
+  z-index: 213;
+}
+.ltcimgv2{
+  position: absolute;
+  left: 463.937px;
+  top: 1360.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.rostv9{
+  position: absolute;
+  left:  1440.938px;
+  top: 1355.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.ltcv2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  position: absolute;
+  left: 483.937px;
+  top: 1356.501px;
+  z-index: 210;
+}
+.bg06 {
+  background-color: rgb(250, 250, 250);
+  position: absolute;
+  left: 445px;
+  top: 1341px;
+  width: 1098px;
+  height: 54px;
+  z-index: 209;
+}
+.Buy-Sellv10 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1260.938px;
+  top: 1299.001px;
+  z-index: 206;
+}
+.chotiristav5 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1090.937px;
+  top: 1298.001px;
+  z-index: 205;
+}
+.patsotv5 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 927.35px;
+  top: 1299.001px;
+  z-index: 204;
+}
+.plusvisimv5 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 813.104px;
+  top: 1299.001px;
+  z-index: 203;
+}
+.strelav5 {
+  font-size: 14px;
+  font-family: "Ionicons";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 592.044px;
+  top: 1299.001px;
+  z-index: 202;
+}
+.basestrilav3 {
+  background-color: rgb(0, 206, 98);
+  opacity: 0.141;
+  position: absolute;
+  left: 587px;
+  top: 1303px;
+  width: 102px;
+  height: 18px;
+  z-index: 200;
+}
+.venv2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  position: absolute;
+  left: 483.901px;
+  top: 1299.001px;
+  z-index: 198;
+}
+.rostv10{
+  position: absolute;
+  left:  1440.938px;
+  top: 1299.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.venimgv2 {
+   position: absolute;
+  left: 463.937px;
+  top: 1302.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.Buy-Sellv11 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1260.938px;
+  top: 1244.001px;
+  z-index: 195;
+}
+.dvistipv5 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1090.294px;
+  top: 1243.001px;
+  z-index: 194;
+}
+.simsotfourv5 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 925.871px;
+  top: 1244.001px;
+  z-index: 193;
+}
+.minusnullikv5 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 95, 115);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 814.938px;
+  top: 1244.001px;
+  z-index: 192;
+}
+.dolarisv5 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 80);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 592.786px;
+  top: 1244.001px;
+  z-index: 191;
+}
+.drgnv2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  position: absolute;
+  left: 483.937px;
+  top: 1244.001px;
+  z-index: 188;
+}
+.bg07 {
+  background-color: rgb(250, 250, 250);
+  position: absolute;
+  left: 445px;
+  top: 1230px;
+  width: 1098px;
+  height: 54px;
+  z-index: 187;
+}
+.rostv11{
+  position: absolute;
+  left:  1440.938px;
+  top: 1244.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.drgnimgv2 {
+   position: absolute;
+  left: 463.937px;
+  top: 1249.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.Buy-Sellv12 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1260.938px;
+  top: 1188.001px;
+  z-index: 184;
+}
+.chotiristav6 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1090.937px;
+  top: 1187.001px;
+  z-index: 183;
+}
+.patsotv6 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 927.35px;
+  top: 1188.001px;
+  z-index: 182;
+}
+.plusvisimv6 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 813.104px;
+  top: 1188.001px;
+  z-index: 181;
+}
+.dolarisv6 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 80);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 595.786px;
+  top: 1188.001px;
+  z-index: 180;
+}
+.qlcv2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  position: absolute;
+  left: 482.937px;
+  top: 1188.001px;
+  z-index: 177;
+}
+.rost12{
+  position: absolute;
+  left:  1440.938px;
+  top: 1188.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.qlcimgv2 {
+   position: absolute;
+  left: 463.937px;
+  top: 1194.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+
+.Buy-Sellv13 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1260.938px;
+  top: 1132.001px;
+  z-index: 174;
+}
+.dvistipv6 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1090.294px;
+  top: 1131.001px;
+  z-index: 173;
+}
+.simsotfourv6 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 925.871px;
+  top: 1132.001px;
+  z-index: 172;
+}
+.minusnullikv6 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 95, 115);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 814.938px;
+  top: 1132.001px;
+  z-index: 171;
+}
+.dolarisv7 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(50, 61, 80);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 592.786px;
+  top: 1132.001px;
+  z-index: 170;
+}
+.lendv2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  position: absolute;
+  left: 483.937px;
+  top: 1132.001px;
+  z-index: 167;
+}
+.bg08 {
+  background-color: rgb(250, 250, 250);
+  position: absolute;
+  left: 445px;
+  top: 1118px;
+  width: 1098px;
+  height: 54px;
+  z-index: 166;
+}
+.rost13{
+  position: absolute;
+  left:  1440.938px;
+  top: 1132.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.lendimgv2 {
+   position: absolute;
+  left: 463.937px;
+  top: 1137.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+
+.Buy-Sellv14 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1260.938px;
+  top: 1076.001px;
+  z-index: 163;
+}
+.chotiristav7 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1090.937px;
+  top:1076.001px;
+  z-index: 162;
+}
+.patsotv7 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 927.35px;
+  top: 1076.001px;
+  z-index: 161;
+}
+.plusvisimv7 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 813.104px;
+  top: 1076.001px;
+  z-index: 160;
+}
+.strelav6 {
+  font-size: 14px;
+  font-family: "Ionicons";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 592.044px;
+  top: 1076.001px;
+  z-index: 159;
+}
+.strilabg {
+  background-color: rgb(0, 206, 98);
+  opacity: 0.141;
+  position: absolute;
+  left: 587px;
+  top: 1080px;
+  width: 103px;
+  height: 18px;
+  z-index: 157;
+}
+.utkv2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  position: absolute;
+  left: 482.937px;
+  top: 1076.001px;
+  z-index: 155;
+}
+.rostv14{
+  position: absolute;
+  left:  1440.938px;
+  top: 1076.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.utkimgv2 {
+   position: absolute;
+  left: 463.937px;
+  top: 1079.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.Buy-Sellv15 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1260.938px;
+  top: 1021.001px;
+  z-index: 152;
+}
+.dvistipv7 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1090.294px;
+  top: 1021.001px;
+  z-index: 151;
+}
+.simsotfourv7 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 925.871px;
+  top: 1021.001px;
+  z-index: 150;
+}
+.minusnullikv7 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(255, 95, 115);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 814.938px;
+  top: 1022.001px;
+  z-index: 149;
+}
+.dolarisv8 {
+  font-size: 16px;
+  font-family: "Ionicons";
+  color: rgb(255, 95, 115);
+  line-height: 1.625;
+  text-align: center;
+  position: absolute;
+  left: 592.037px;
+  top: 1021.001px;
+  z-index: 148;
+}
+.bgdolarisv3 {
+  background-color: rgb(255, 95, 115);
+  opacity: 0.141;
+  position: absolute;
+  left: 587px;
+  top: 1026px;
+  width: 115px;
+  height: 18px;
+  z-index: 146;
+}
+.ETHV3 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  position: absolute;
+  left: 483.937px;
+  top: 1021.001px;
+  z-index: 144;
+}
+.rostv15{
+  position: absolute;
+  left:  1440.938px;
+  top: 1021.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.etcimgv2 {
+   position: absolute;
+  left: 463.937px;
+  top: 1025.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.bg09 {
+  background-color: rgb(250, 250, 250);
+  position: absolute;
+  left: 445px;
+  top: 1008px;
+  width: 1098px;
+  height: 54px;
+  z-index: 143;
+}
+
+.Buy-Sellv16 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1260.938px;
+  top: 966.001px;
+  z-index: 140;
+}
+.chotiristav8 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 1090.937px;
+  top: 966.001px;
+  z-index: 139;
+}
+.patsotv8 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 927.35px;
+  top: 966.001px;
+  z-index: 138;
+}
+.plusvisimv8 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 813.104px;
+  top: 966.001px;
+  z-index: 137;
+}
+.strelav7 {
+  font-size: 14px;
+  font-family: "Ionicons";
+  color: rgb(0, 206, 98);
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+  left: 592.044px;
+  top: 966.001px;
+  z-index: 136;
+}
+.basestrilav5 {
+  background-color: rgb(0, 206, 98);
+  opacity: 0.141;
+  position: absolute;
+  left: 587px;
+  top: 970px;
+  width: 103px;
+  height: 18px;
+  z-index: 134;
+}
+.actv2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(25, 37, 53);
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: left;
+  position: absolute;
+  left: 483.937px;
+  top: 966.001px;
+  z-index: 132;
+}
+
+.rostv16{
+  position: absolute;
+  left:  1440.938px;
+  top: 966.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.actimgv2 {
+   position: absolute;
+  left: 463.937px;
+  top: 970.001px;
+  width: 1098px;
+  height: 1px;
+  z-index: 315;
+}
+.Joinn {
+  font-size: 10px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 2.695;
+  text-align: center;
+  -moz-transform: matrix( 1.5970024979184,0,0,1.59675405742821,0,0);
+  -webkit-transform: matrix( 1.5970024979184,0,0,1.59675405742821,0,0);
+  -ms-transform: matrix( 1.5970024979184,0,0,1.59675405742821,0,0);
+  position: absolute;
+  left: 441.944px;
+  top: 2250.621px;
+  z-index: 122;
+}
+.BgJoinn {
+  border-radius: 6px;
+  background-image: -moz-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(56,18,127) 0%, rgb(179,0,230) 100%);
+  position: absolute;
+  left: 375px;
+  top: 2236px;
+  width: 199px;
+  height: 52px;
+  z-index: 121;
+}
+.these {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(145, 161, 188);
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 375.988px;
+  top: 2124.25px;
+  width: 525px;
+  height: 62px;
+  z-index: 118;
+}
+.revolution {
+  font-size: 42px;
+  font-family: "Rubik";
+  color: rgb(50, 61, 80);
+  line-height: 1.186;
+  text-align: left;
+  position: absolute;
+  left: 374.67px;
+  top: 2061.684px;
+  z-index: 117;
+}
+.nout{
+  left: 900px;
+  top: 2036px;
+  z-index: 328;
+  position: absolute;
+}
+.Discover {
+  font-size: 42px;
+  font-family: "Rubik";
+  color: rgb(50, 61, 80);
+  line-height: 1.185;
+  text-align: center;
+  position: absolute;
+  left: 630.849px;
+  top: 2499.745px;
+  z-index: 64;
+}
+.bgperexoda {
+  background-image: url("ImagesMarket/bgbuttonb.png");
+  position: absolute;
+  left: 828px;
+  top: 2640px;
+  width: 24px;
+  height: 24px;
+  z-index: 69;
+  
+}
+.Vector_Smart_Object {
+  background-image: url("Vector Smart Object.png");
+  position: absolute;
+  left: 888px;
+  top: 2640px;
+  width: 24px;
+  height: 24px;
+  z-index: 69;
+}
+
+.bitcoins {
+  font-size: 10px;
+  font-family: "Roboto";
+  color: rgb(246, 146, 30);
+  text-transform: uppercase;
+  line-height: 2.695;
+  text-align: center;
+  -moz-transform: matrix( 1.5970024979184,0,0,1.59675405742821,0,0);
+  -webkit-transform: matrix( 1.5970024979184,0,0,1.59675405742821,0,0);
+  -ms-transform: matrix( 1.5970024979184,0,0,1.59675405742821,0,0);
+  position: absolute;
+  left: 892.782px;
+  top: 2650px;
+  z-index: 100;
+}
+
+.bb {
+  background-color: rgb(50, 75, 107);
+  position: absolute;
+  left: 850.782px;
+  top: 2650px;
+  width: 18px;
+  height: 10px;
+  z-index: 100;
+}
+.strelkatreugolnik {
+   border: 10px solid transparent;
+   border-top: 10px solid rgb(70, 30, 148);
+   display: block;
+  position: absolute;
+  left: 970px;
+  top: 2658px;
+  width: 1px;
+  height: 1px;
+  z-index: 100;
+}
+.line-graph {
+  position: absolute;
+  left: -3px;
+  top: 2725px;
+  width: 1921px;
+  height: 537px;
+  z-index: 7;
+}
+.gold {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(145, 161, 188);
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 1720.937px;
+  top: 2959.252px;
+  z-index: 100;
+}
+.Over {
+  font-size: 20px;
+  font-family: "Roboto";
+  color: rgb(35, 176, 94);
+  line-height: 1.2;
+  position: absolute;
+  left: 1721.93px;
+  top: 2935.198px;
+  z-index: 58;
+}
+  
+  
+  
+  
+  .linev7 {
+  background-image: url("imagesV2/linefooter.png");
+  opacity: 0.051;
+  position: absolute;
+  left: 375px;
+  top: 2075px;
+  width: 370px;
+  height: 1px;
+  z-index: 100;
+}
+
+.crypticoin {
+  font-size: 31px;
+  font-family: "Fixedsys";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 0.575;
+  -moz-transform: matrix( 0.68693819526521,0,0,0.68085106382979,0,0);
+  -webkit-transform: matrix( 0.68693819526521,0,0,0.68085106382979,0,0);
+  -ms-transform: matrix( 0.68693819526521,0,0,0.68085106382979,0,0);
+  position: absolute;
+  left: 391.945px;
+  top: 2835.816px;
+  z-index: 36;
+}
+
+
+.logofooter{
+  background-image: url("logofooter.png");
+  position: absolute;
+  left: 370.945px;;
+  top: 2828.816px;;
+  width: 570px;
+  height: 299px;
+  z-index: 80;
+}
+.twwiter {
+  background-image: url("twiter.png");
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: rgb(50, 61, 79);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 374.937px;
+  top: 3100px;
+  z-index: 32;
+}
+
+.instagram {
+  background-image: url("instagram.png");
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: rgb(50, 61, 79);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 420.937px;
+  top: 3100px;
+  z-index: 32;
+}
+.facebook {
+  background-image: url("facebook.png");
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: rgb(50, 61, 79);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 460.937px;
+  top: 3100px;
+  z-index: 32;
+}
+.skype {
+  background-image: url("skype.png");
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: rgb(50, 61, 79);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 505.937px;
+  top: 3100px;
+  z-index: 32;
+}
+.Headquarters {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(91, 104, 128);
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 373.844px;
+  top: 2896.22px;
+  width: 260px;
+  height: 158px;
+  z-index: 31;
+}
+.bitgo img {
+  background-image: url("bitgo.png");
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: rgb(50, 61, 79);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 540.937px;
+  top: 3100px;
+  z-index: 32;
+}
+.comod img {
+  background-image: url("bitgo.png");
+  font-size: 20px;
+  font-family: "FontAwesome";
+  color: rgb(50, 61, 79);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 660.937px;
+  top: 3093px;
+  z-index: 32;
+}
+.bgfoot {
+  background-color: rgb(21, 29, 42);
+  position: absolute;
+  left: 0px;
+  top: 2720px;
+  width: 1920px;
+  height: 500px;
+  z-index: 11;
+}
+.Informationv2 {
+  font-size: 20px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 844.87px;
+  top: 2814px;
+  z-index: 23;
+}
+.Payment {
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 845.044px;
+  top: 2894.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 22;
+}
+.Fee{
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 845.044px;
+  top: 2934.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 22;
+}
+.Getting{
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 845.044px;
+  top: 2974.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 22;
+}
+.Identity{
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 845.044px;
+  top: 3014.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 22;
+}
+.Verification{
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 845.044px;
+  top: 3054.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 22;
+}
+.Productsv1 {
+  font-size: 20px;
+  font-family: "Rubik";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 1174.87px;
+  top: 2814.816px;
+  z-index: 17;
+ 
+}
+
+.Productss {
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 1174.87px;
+  top: 2894.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 16;
+}
+.GDAX{
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 1174.87px;
+  top: 2934.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 16;
+}
+.Platform{
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 1174.87px;
+  top: 2974.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 16;
+}
+.Merchant{
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 1174.87px;
+  top: 3014.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 16;
+}
+.Server{
+  font-size: 13px;
+  font-family: "FontAwesome";
+  color: rgb(91, 106, 132);
+  line-height: 1.692;
+  text-align: left;
+  position: absolute;
+  left: 1174.87px;
+  top: 3054.25px;
+  width: 164px;
+  height: 186px;
+  z-index: 16;
+}
+.forma {
+  opacity: 5.29;
+  position: absolute;
+  left: 449px;
+  top: 2725px;
+  width: 1000px;
+  height: 200px;
+  z-index: 12;
+}
+.About_End{
+      font-size: 13px;
+  font-family: "Roboto";
+ color: rgb(82, 82, 197);
+  line-height: 2.077;
+  position: absolute;
+  left: 1060.937px;
+  top: 3235.5px;
+  z-index: 8;
+}
+.About_End:hover{
+	background: aqua;
+	color: black;
+}
+.Work_End{
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgb(82, 82, 197);
+    line-height: 2.077;
+    position: absolute;
+	left: 1130.937px;
+	top: 3235.5px;
+    z-index: 8;
+}
+.Work_End:hover{
+	background: aqua;
+	color: black;
+}
+.Features{
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgb(82, 82, 197);
+    line-height: 2.077;
+    position: absolute;
+    left: 1200.937px;
+	top: 3235.5px;
+    z-index: 8;
+}
+.Features:hover{
+	background: aqua;
+	color: black;
+}
+.Contact_us{
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgb(82, 82, 197);
+    line-height: 2.077;
+    position: absolute;
+    left: 1270.937px;
+	top: 3235.5px;
+    z-index: 8;
+}
+.Contact_us:hover{
+	background: aqua;
+	color: black;
+}
+.tophive{
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgb(91, 104, 128);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 373px;
+    top: 3235px	;
+    z-index: 7;
+}
+.tophive {
+  font-size: 13px;
+  font-family: "Roboto";
+  color: rgb(91, 104, 128);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 373.937px;
+  top: 3235.757px;
+  z-index: 7;
+}
+.BaseEnd {
+  background-color: rgb(26, 35, 51);
+  position: absolute;
+  left: 0px;
+  top: 3220px;
+  width: 1920px;
+  height: 59px;
+  z-index: 6;
+}
+#app{
+	position: relative;
+	top: 800px;
+	left: 220px;
+	width: 100%;
+	z-index: 200;
+}
+.table{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	border-radius: 10px;
+	border-spacing: 0;
+	text-align: center;
+	top: 4000px;
+}
+th {
+	background: #BCEBDD;
+	color: white;
+	text-shadow: 0 1px 1px #2D2020;
+	padding: 10px 20px;
+}
+th, td {
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	border-color: white;
+}
+th:first-child, td:first-child {
+	text-align: left;
+}
+th:first-child {
+	border-top-left-radius: 10px;
+}
+th:last-child {
+	border-top-right-radius: 10px;
+	border-right: none;
+}
+td {
+	padding: 10px 20px;
+	background: #F8E391;
+}
+tr:last-child td:first-child {
+	border-radius: 0 0 0 10px;
+}
+tr:last-child td:last-child {
+	border-radius: 0 0 10px 0;
+}
+tr td:last-child {
+	border-right: none;
+}
+
+</style>
+</head>
+<body>
+	<div class="head"><!-- start block: "head"  -->
+		<div class="menu"> <!-- start menu  -->
+			<div class="menuv2"> <!-- start first version menu -->
+					<p>Work</p>
+			</div> <!-- end first version menu -->
+			<div class="menuv3"> <!-- start second version  menu -->
+					<p>Features</p>
+			</div> <!-- end second  version menu -->
+			<div class="menuv4"> <!-- start  third version menu -->
+					<p>Custommer</p>
+			</div> <!-- end third version menuv4 -->
+		</div> <!-- end menu -->
+		
+			<div class="logo-head"> <!-- start logo-head -->
+				<p class="Crypticoin">Crypticoin</p>
+			</div> <!-- end logo-head -->
+			<div class="top-logo"> <!-- start top-logo -->
+				<a href=""><img src="imagesWallet/logoheader.png" alt=""></a> <!-- photo logo -->
+			</div> <!-- end top-logo -->
+			<div class="links"> <!-- start  entry entrance exit -->
+				<a href="file:///C:/Users/%D0%94%D0%B8%D0%BC%D0%B0/Desktop/%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BA%D0%B0/index.html"><p class="sign">sign</p></a>
+				<p class="up">up</p>
+				<div class="strelka"> <!-- start arrow -->
+				
+				</div> <!-- end arrow --> 
+				<p class="btcc">Btc</p>
+				<div class="strelkav2"> <!-- start arrowV2 -->
+					
+				</div> <!-- end arrowV2 -->
+				<div class="flag"> <!-- start flag -->
+					<p class="english">English</p>
+					<img src="imagesWallet/vector.png" alt=""> <!-- photo flag -->
+					<p class="btcv2">btc</p>
+				</div> <!-- end flag -->
+				<p class="Markett">#Market</p>
+			</div> <!-- end links -->
+	</div><!-- end block: "head" -->
+  	
+	<div class="coin-chart">
+		<p class="bgbtnroz"></p>
+		<a name="tablica"><p class="Serch">Serch Coin</p></a>
+		<p class="bgcoin"></p>
+		<p class="poisk"></p>
+		<p class="btccc">BTC</p>
+		<p class="ETH">ETH</p>
+		<p class="NEO">NEO</p>
+		<p class="KCS">KCS</p>
+		<p class="BCH">BCH</p>
+		<p class="bgactive"></p>
+		<p class="fullbgactive"></p>
+		<div class="Bar">
+			<p class="xatkka"><img src="ImagesMarket/xatinka.png"></p>
+			<p class="bgxata"></p>
+			<p class="greybg"></p>
+			<p class="bitcoin"><img src="ImagesMarket/bitcoin.png"></p>
+			<p class="lvlup"><img src="ImagesMarket/lvlup.png"></p>
+			<p class="mexanizm"><img src="ImagesMarket/mexanizmm.png"></p>
+			<p class="bitcoini"><img src="ImagesMarket/bitcoini.png"></p>
+		</div>
+		
+		<div class="data">
+			<div class="menu">
+				<p class="linev1"></p>
+				<p class="Operation">Operation</p>
+				<p class="Fast">Fast trading</p>
+				<p class="Volume">Volume(24H)</p>
+				<p class="Amount">Amount(24H)</p>
+				<p class="Change">Change</p>
+				<p class="Last">Last Price</p>
+				<p class="Assets">Assets</p>
+			</div>
+			
+			<div class="01">
+				<p class="Buy-Sell">Buy   Sell</p>
+				<p class="dvisti">255.43879765</p>
+				<p class="simsot">745,786.1890</p>
+				<p class="minusnull">- 0.7%</p>
+				<p class="dolari">10.5062050000  $11.28</p>
+				<p class="ltc">ltc/BTC</p>
+				<p class="rost"><img src="ImagesMarket/rost.png"></p>
+				<p class="ltcimg"><img src="ImagesMarket/ltc.png"></p>
+				<p class="bg02"></p>
+			</div>
+			
+			<div class="02">
+				<p class="Buy-Sellv2">Buy   Sell</p>
+				<p class="chotirista">430.55934449</p>
+				<p class="patsot">524,966.1114</p>
+				<p class="plusvisim">+ 8.1%</p>
+				<p class="strela">↑ 10.5062050000  $11.28</p>
+				<p class="ven">ven/BTC</p>
+				<p class="rostv2"><img src="ImagesMarket/rost.png"></p>
+				<p class="venimg"><img src="ImagesMarket/ven.png"></p>
+				<p class="basestrila"></p>
+			</div>
+			
+			<div class="03">
+				<p class="Buy-Sellv3">Buy   Sell</p>
+				<p class="dvistip">255.43879765</p>
+				<p class="simsotfour">745,786.1890</p>
+				<p class="minusnullik">- 0.7%</p>
+				<p class="dolaris">10.5062050000  $11.28</p>
+				<p class="drgn">drgn/BTC</p>
+				<p class="rostv3"><img src="ImagesMarket/rost.png"></p>
+				<p class="drgnimg"><img src="ImagesMarket/drgn.png"></p>
+				<p class="bg03"></p>
+			</div>
+			
+			<div class="04">
+				<p class="Buy-Sellv4">Buy   Sell</p>
+				<p class="chotiristav2">430.55934449</p>
+				<p class="patsotv2">524,966.1114</p>
+				<p class="plusvisimv2">+ 8.1%</p>
+				<p class="strelav2">↑ 10.5062050000  $11.28</p>
+				<p class="qlc">qlc/BTC</p>
+				<p class="rostv4"><img src="ImagesMarket/rost.png"></p>
+				<p class="qlcimg"><img src="ImagesMarket/qlc.png"></p>
+			</div>
+			
+			<div class="05">
+				<p class="Buy-Sellv5">Buy   Sell</p>
+				<p class="dvistipv2">255.43879765</p>
+				<p class="simsotfourv2">745,786.1890</p>
+				<p class="minusnullikv2">- 0.7%</p>
+				<p class="dolarisv2">10.5062050000  $11.28</p>
+				<p class="lend">lend/BTC</p>
+				<p class="rostv5"><img src="ImagesMarket/rost.png"></p>
+				<p class="lendimg"><img src="ImagesMarket/lend.png"></p>
+				<p class="bg04"></p>
+			</div>
+			
+			<div class="6">
+				<p class="Buy-Sellv6">Buy   Sell</p>
+				<p class="chotiristav3">430.55934449</p>
+				<p class="patsotv3">524,966.1114</p>
+				<p class="plusvisimv3">+ 8.1%</p>
+				<p class="strelav3">↑ 10.5062050000  $11.28</p>
+				<p class="utk">utk/BTC</p>
+				<p class="rostv6"><img src="ImagesMarket/rost.png"></p>
+				<p class="utkimg"><img src="ImagesMarket/utk.png"></p>
+			</div>
+			
+			<div class="7">
+				<p class="Buy-Sellv7">Buy   Sell</p>
+				<p class="dvistipv3">255.43879765</p>
+				<p class="simsotfourv3">745,786.1890</p>
+				<p class="minusnullikv3">- 0.7%</p>
+				<p class="dolarisv3">↓ 0.43546789456  $4.28</p>
+				<p class="bgdolarisv3"></p>
+				<p class="ETHV2">ETH/BTC</p>
+				<p class="rostv7"><img src="ImagesMarket/rost.png"></p>
+				<p class="etcimg"><img src="ImagesMarket/etc.png"></p>
+				<p class="bg05"></p>
+			</div>
+			
+			<div class="8">
+				<p class="Buy-Sellv8">Buy   Sell</p>
+				<p class="chotiristav4">430.55934449</p>
+				<p class="patsotv4">524,966.1114</p>
+				<p class="plusvisimv4">+ 8.1%</p>
+				<p class="strelav4">↑ 10.5062050000  $11.28</p>
+				<p class="basestrilav2"></p>
+				<p class="act">Act/BTC</p>
+				<p class="rostv8"><img src="ImagesMarket/rost.png"></p>
+				<p class="actimg"><img src="ImagesMarket/act.png"></p>
+			</div>
+			
+			<div class="9">
+				<p class="Buy-Sellv9">Buy   Sell</p>
+				<p class="dvistipv4">255.43879765</p>
+				<p class="simsotfourv4">745,786.1890</p>
+				<p class="minusnullikv4">- 0.7%</p>
+				<p class="dolarisv4">10.5062050000  $11.28</p>
+				<p class="ltcv2">ltc/BTC</p>
+				<p class="rostv9"><img src="ImagesMarket/rost.png"></p>
+				<p class="ltcimgv2"><img src="ImagesMarket/ltc.png"></p>
+				<p class="bg06"></p>
+			</div>
+			
+			<div class="10">
+				<p class="Buy-Sellv10">Buy   Sell</p>
+				<p class="chotiristav5">430.55934449</p>
+				<p class="patsotv5">524,966.1114</p>
+				<p class="plusvisimv5">+ 8.1%</p>
+				<p class="strelav5">↑ 10.5062050000  $11.28</p>
+				<p class="basestrilav4"></p>
+				<p class="venv2">Ven/BTC</p>
+				<p class="rostv10"><img src="ImagesMarket/rost.png"></p>
+				<p class="venimgv2"><img src="ImagesMarket/ven.png"></p>
+				<p class="basestrilav4"></p>
+			</div>
+			
+			<div class="11">
+				<p class="Buy-Sellv11">Buy   Sell</p>
+				<p class="dvistipv5">255.43879765</p>
+				<p class="simsotfourv5">745,786.1890</p>
+				<p class="minusnullikv5">- 0.7%</p>
+				<p class="dolarisv5">10.5062050000  $11.28</p>
+				<p class="drgnv2">drgn/BTC</p>
+				<p class="rostv11"><img src="ImagesMarket/rost.png"></p>
+				<p class="drgnimgv2"><img src="ImagesMarket/drgn.png"></p>
+				<p class="bg07"></p>
+			</div>
+			
+			<div class="12">
+				<p class="Buy-Sellv12">Buy   Sell</p>
+				<p class="chotiristav6">430.55934449</p>
+				<p class="patsotv6">524,966.1114</p>
+				<p class="plusvisimv6">+ 8.1%</p>
+				<p class="dolarisv6"> 10.5062050000  $11.28</p>
+				<p class="qlcv2">qlc/BTC</p>
+				<p class="rost12"><img src="ImagesMarket/rost.png"></p>
+				<p class="qlcimgv2"><img src="ImagesMarket/qlc.png"></p>
+			</div>
+			
+			<div class="13">
+				<p class="Buy-Sellv13">Buy   Sell</p>
+				<p class="dvistipv6">255.43879765</p>
+				<p class="simsotfourv6">745,786.1890</p>
+				<p class="minusnullikv6">- 0.7%</p>
+				<p class="dolarisv7">10.5062050000  $11.28</p>
+				<p class="lendv2">lend/BTC</p>
+				<p class="rost13"><img src="ImagesMarket/rost.png"></p>
+				<p class="lendimgv2"><img src="ImagesMarket/lend.png"></p>
+				<p class="bg08"></p>
+			</div>
+			
+			<div class="14">
+				<p class="Buy-Sellv14">Buy   Sell</p>
+				<p class="chotiristav7">430.55934449</p>
+				<p class="patsotv7">524,966.1114</p>
+				<p class="plusvisimv7">+ 8.1%</p>
+				<p class="strelav6">↑ 10.5062050000  $11.28</p>
+				<p class="strilabg"></p>
+				<p class="utkv2">utk/BTC</p>
+				<p class="rostv14"><img src="ImagesMarket/rost.png"></p>
+				<p class="utkimgv2"><img src="ImagesMarket/utk.png"></p>
+			</div>
+			
+			<div class="15">
+				<p class="Buy-Sellv15">Buy   Sell</p>
+				<p class="dvistipv7">255.43879765</p>
+				<p class="simsotfourv7">745,786.1890</p>
+				<p class="minusnullikv7">- 0.7%</p>
+				<p class="dolarisv8">↓ 0.43546789456  $4.28</p>
+				<p class="bgdolarisv3"></p>
+				<p class="ETHV3">ETH/BTC</p>
+				<p class="rostv15"><img src="ImagesMarket/rost.png"></p>
+				<p class="etcimgv2"><img src="ImagesMarket/etc.png"></p>
+				<p class="bg09"></p>
+			</div>
+			
+			<div class="16">
+				<p class="Buy-Sellv16">Buy   Sell</p>
+				<p class="chotiristav8">430.55934449</p>
+				<p class="patsotv8">524,966.1114</p>
+				<p class="plusvisimv8">+ 8.1%</p>
+				<p class="strelav7">↑ 10.5062050000  $11.28</p>
+				<p class="basestrilav5"></p>
+				<p class="actv2">Act/BTC</p>
+				<p class="rostv16"><img src="ImagesMarket/rost.png"></p>
+				<p class="actimgv2"><img src="ImagesMarket/act.png"></p>
+			</div>
+		</div>
+	</div>
+<!-- 
+<div id="app">
+  <template>
+    <table class="table">
+      <thead class="">
+      <tr>
+        <th scope="col">Currency</th>
+        <th scope="col">Top</th>
+        <th scope="col">Buy</th>
+        <th scope="col">Sell</th>
+        <th scope="col">Symbol</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr v-for="(item, index) in users">
+        <td>{{index + 1 }}</td>
+        <td>{{item.last}}</td>
+        <td>{{item.buy}}</td>
+        <td>{{item.sell}}</td>
+		 <td>{{item.symbol}}</td>
+       </tr>
+      </tbody>
+    </table>
+  </template>
+</div>end table for API -->
+ 
+	<div class="Menagement tool"><!-- start block: "Menagement tool" -->
+		<div class="textv1"><!-- start block: "textV1" -->
+			<a href="http://www.cecolor.com/fintech-information/legal-coin-cryptocurrency-that-will-boom/0"><p class="Joinn">Join our team</p></a>
+			<a href="http://www.cecolor.com/fintech-information/legal-coin-cryptocurrency-that-will-boom/0"><p class="BgJoinn"></p></a>
+			<p class="these">For these measurements I set up a worst-case least-efficient scenario (with a<br> modern card) – one over clocked for maximum computational power. A more <br>sincere effort towards efficiency would see a few</p>
+			<p class="revolution">Join the crypto revolution!</p>
+			<p class="nout"><img src="ImagesMarket/laptop.png"></p><!-- photo laptop -->
+		</div><!-- end block: "textv1" -->
+	</div><!-- end block: "Menagement tool" -->
+	
+	<div class="footer"><!-- start block: "footer" -->
+		<div class="about"><!-- start block: "about" -->
+			<br><p class="linev7"><img src="imagesV2/linefooter.png"></p><!-- line -->
+			<p class="crypticoin">Crypticoin</p>
+			<p class="logofooter"><img src="imagesV2/logofooter.png"></p><!-- photo logofooter -->
+			<div class="socseti"><!-- start block:"socseti" -->
+				<p class="twwiter"><img src="imagesV2/twiter.png"><!-- photo twiter -->
+				<p class="instagram"><img src="imagesV2/instagram.png"><!-- photo instagram -->
+				<p class="facebook"><img src="imagesV2/facebook.png"><!-- photo facebook -->
+				<p class="skype"><img src="imagesV2/skype.png"><!-- photo skype -->
+				<p class="bitgo"><img src="imagesV2/bitgo.png"></p><!-- photo bitgo -->
+				<p class="comod"><img src="imagesV2/comod.png"></p><!-- photo comod -->
+			</div>
+			<p class="Headquarters">Headquarters:<br>3422 Old Capitol Trail PMB# 989<br>Wilmington DE 19808<br><br><br>Phone: +1 (865) 972-95385<br>Support Email (FAST): help@domain.com 
+	Business Email: help@domain.com	</p>	
+				<div class="bgfoot"><!-- background footer -->
+				
+				</div>
+				<div class="Information"><!-- start block:"Information" -->
+					<p class="Informationv2">Information</p>
+					<a href="https://en.bitcoin.it/wiki/Payment_methods"><p class="Payment">  Payment Options</p></a>
+					<a href="https://cex.io/fee-schedule"><p class="Fee"> Fee Schedule</p></a>
+					<a href="https://www.bitcoinmining.com/getting-started/"><p class="Getting">  Getting Started</p></a>
+					<a href="https://support.cex.io/hc/en-us/articles/215744957-Identity-and-Address-Verification-on-CEX-IO"><p class="Identity">  Identity Verification Guide</p></a>
+					<a href="https://support.cex.io/hc/en-us/articles/215994438-Payment-Card-Verification-Guide"><p class="Verification">  Card Verification Guide</p></a>
+				</div><!-- end block: "Information" -->
+				
+				<div class="Products"><!-- start block: "Products" -->
+					<p class="Productsv1">Products</p>
+					<a href="https://www.coinbase.com/signin"><p class="Productss">  Buy/Sell Digital Currency</p></a>
+					<a href="https://pro.coinbase.com/"><p class="GDAX">  GDAX </p></a> 
+					<a href="https://developer.bitcoin.com/"><p class="Platform">  Developer Platform</p></a>
+					<a href="https://www.bitcoin.com/merchant-solutions/"><p class="Merchant">  Merchant Tools</p></a>
+					<a href="https://www.blockchain.com/api"><p class="Server">  Easy Bitcoin API Server</p></a>
+					<div class="forma"><!-- start photo bigb -->
+						<img src="imagesV2/bigb.png"><!-- background-photo bigb -->
+					</div>
+				</div><!-- end block:"Products" -->
+		</div><!-- end block:"about" -->
+	</div><!-- end block: "footer" -->
+	
+	<div class="end"><!-- start block: "end" -->
+		<p class="About_End">About us</p>
+        <p class="Work_End">Work</p>
+        <p class="Features">Features</p>
+		<p class="Contact_us">Contact us</p>
+        <p class="tophive">@tophive</p>
+		<div class="BaseEnd"></div><!-- background end -->
+	</div><!-- end block: "end" -->
+
+<script>
+// API for table
+let app = new Vue({
+  el: "#app",
+  data: () => ({
+    users:  null
+  }),
+  methods: {
+
+  },
+  created(){
+    axios
+        .get("https://blockchain.info/ticker")
+        .then(response => (this.users = response.data));
+  }
+});
+</script>
+</body>
+</html>
